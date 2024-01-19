@@ -806,13 +806,14 @@ class _NewProductState extends State<NewProduct> {
           //   tagEditTextController,
           //   isMandatory: true,
           // ),
-          itemSpacer(),
-          buildEditTextField(
-              //to remove
-              LangText(context: context).getLocal()!.barcode_ucf,
-              LangText(context: context).getLocal()!.barcode_ucf,
-              barcodeEditTextController,
-              isMandatory: false),
+          //to remove
+          // itemSpacer(),
+          // buildEditTextField(
+          //   LangText(context: context).getLocal()!.barcode_ucf,
+          //   LangText(context: context).getLocal()!.barcode_ucf,
+          //   barcodeEditTextController,
+          //   isMandatory: false,
+          // ),
           if (refund_addon.$)
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
