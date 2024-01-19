@@ -806,9 +806,10 @@ class _NewProductState extends State<NewProduct> {
           //   tagEditTextController,
           //   isMandatory: true,
           // ),
-          //to remove
+
           // itemSpacer(),
           // buildEditTextField(
+          //     //to remove
           //   LangText(context: context).getLocal()!.barcode_ucf,
           //   LangText(context: context).getLocal()!.barcode_ucf,
           //   barcodeEditTextController,
@@ -851,19 +852,19 @@ class _NewProductState extends State<NewProduct> {
             },
           ),
           itemSpacer(),
-          buildGroupItems(
-            //to remove
-            LangText(context: context).getLocal()!.vat_n_tax_ucf,
-            Column(
-              children: List.generate(vatTaxList.length, (index) {
-                return buildVatTax(vatTaxList[index].vatTaxModel.name,
-                    vatTaxList[index].amount, (onChangeDropDown) {
-                  vatTaxList[index].selectedItem = onChangeDropDown;
-                }, vatTaxList[index].selectedItem, vatTaxList[index].items);
-              }),
-            ),
-          ),
-          itemSpacer(),
+          // buildGroupItems(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.vat_n_tax_ucf,
+          //   Column(
+          //     children: List.generate(vatTaxList.length, (index) {
+          //       return buildVatTax(vatTaxList[index].vatTaxModel.name,
+          //           vatTaxList[index].amount, (onChangeDropDown) {
+          //         vatTaxList[index].selectedItem = onChangeDropDown;
+          //       }, vatTaxList[index].selectedItem, vatTaxList[index].items);
+          //     }),
+          //   ),
+          // ),
+          // itemSpacer(),
         ],
       ),
     );
@@ -905,16 +906,20 @@ class _NewProductState extends State<NewProduct> {
             setChange();
           }, thumbnailImage),
           itemSpacer(),
-          buildGroupItems(
-              //to remove
-              LangText(context: context).getLocal()!.product_videos_ucf,
-              _buildDropDownField(
-                  LangText(context: context).getLocal()!.video_provider_ucf,
-                  (newValue) {
-                selectedVideoType = newValue;
-                setChange();
-              }, selectedVideoType, videoType)),
-          itemSpacer(),
+          // buildGroupItems(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.product_videos_ucf,
+          //   _buildDropDownField(
+          //     LangText(context: context).getLocal()!.video_provider_ucf,
+          //     (newValue) {
+          //       selectedVideoType = newValue;
+          //       setChange();
+          //     },
+          //     selectedVideoType,
+          //     videoType,
+          //   ),
+          // ),
+          // itemSpacer(),
           buildEditTextField(
               LangText(context: context).getLocal()!.video_link_ucf,
               LangText(context: context).getLocal()!.video_link_ucf,
@@ -923,17 +928,17 @@ class _NewProductState extends State<NewProduct> {
           smallTextForMessage(
               LangText(context: context).getLocal()!.video_link_des),
           itemSpacer(),
-          buildGroupItems(
-            //to remove
-            LangText(context: context).getLocal()!.pdf_description_ucf,
-            chooseSingleFileField(
-                LangText(context: context).getLocal()!.pdf_specification_ucf,
-                "", (onChosenFile) {
-              pdfDes = onChosenFile;
-              setChange();
-            }, pdfDes),
-          ),
-          itemSpacer()
+          // buildGroupItems(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.pdf_description_ucf,
+          //   chooseSingleFileField(
+          //       LangText(context: context).getLocal()!.pdf_specification_ucf,
+          //       "", (onChosenFile) {
+          //     pdfDes = onChosenFile;
+          //     setChange();
+          //   }, pdfDes),
+          // ),
+          // itemSpacer()
         ],
       ),
     );
@@ -1017,11 +1022,12 @@ class _NewProductState extends State<NewProduct> {
               ],
             ),
           itemSpacer(),
-          buildEditTextField(
-              //to remove
-              LangText(context: context).getLocal()!.external_link_ucf,
-              LangText(context: context).getLocal()!.external_link_ucf,
-              externalLinkEditTextController),
+          // buildEditTextField(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.external_link_ucf,
+          //   LangText(context: context).getLocal()!.external_link_ucf,
+          //   externalLinkEditTextController,
+          // ),
           itemSpacer(height: 10),
           smallTextForMessage(LangText(context: context)
               .getLocal()!
