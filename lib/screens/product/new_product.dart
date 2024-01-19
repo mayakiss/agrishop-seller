@@ -796,15 +796,16 @@ class _NewProductState extends State<NewProduct> {
               "1",
               minimumEditTextController,
               isMandatory: true),
-          itemSpacer(),
-          buildTagsEditTextField(
-              //to remove
-              LangText(context: context).getLocal()!.tags_ucf,
-              LangText(context: context)
-                  .getLocal()!
-                  .type_and_hit_enter_to_add_a_tag_ucf,
-              tagEditTextController,
-              isMandatory: true),
+          // itemSpacer(),
+          // buildTagsEditTextField(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.tags_ucf,
+          //   LangText(context: context)
+          //       .getLocal()!
+          //       .type_and_hit_enter_to_add_a_tag_ucf,
+          //   tagEditTextController,
+          //   isMandatory: true,
+          // ),
           itemSpacer(),
           buildEditTextField(
               //to remove
