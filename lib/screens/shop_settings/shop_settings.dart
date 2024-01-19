@@ -50,15 +50,17 @@ class _ShopSettingsState extends State<ShopSettings> {
                   MyTransaction(context: context).push(ShopGeneralSetting());
                 },
                 child: Container(
-
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(right: 8.0,left: 4),
-                        child: Image.asset("assets/icon/general_setting.png",height: 17,width: 17,),
+                        padding: const EdgeInsets.only(right: 8.0, left: 4),
+                        child: Image.asset(
+                          "assets/icon/general_setting.png",
+                          height: 17,
+                          width: 17,
+                        ),
                       ),
-
                       Text(
                         LangText(context: context)
                             .getLocal()!
@@ -78,8 +80,6 @@ class _ShopSettingsState extends State<ShopSettings> {
                   ),
                 ),
               ),
-
-
               Visibility(
                 visible: delivery_boy_addon.$,
                 child: Column(
@@ -101,8 +101,12 @@ class _ShopSettingsState extends State<ShopSettings> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 8.0,left: 4),
-                            child: Image.asset("assets/icon/delivery_boy_setting.png",height: 17,width: 17,),
+                            padding: const EdgeInsets.only(right: 8.0, left: 4),
+                            child: Image.asset(
+                              "assets/icon/delivery_boy_setting.png",
+                              height: 17,
+                              width: 17,
+                            ),
                           ),
                           Text(
                             LangText(context: context)
@@ -141,14 +145,15 @@ class _ShopSettingsState extends State<ShopSettings> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(right: 8.0,left: 4),
-                        child: Image.asset("assets/icon/banner_setting.png",height: 17,width: 17,),
+                        padding: const EdgeInsets.only(right: 8.0, left: 4),
+                        child: Image.asset(
+                          "assets/icon/banner_setting.png",
+                          height: 17,
+                          width: 17,
+                        ),
                       ),
-
                       Text(
-                        LangText(context: context)
-                            .getLocal()!
-                            .banner_settings,
+                        LangText(context: context).getLocal()!.banner_settings,
                         style: TextStyle(
                             fontSize: 14,
                             color: MyTheme.white,
@@ -179,10 +184,13 @@ class _ShopSettingsState extends State<ShopSettings> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(right: 8.0,left: 4),
-                        child: Image.asset("assets/icon/social_setting.png",height: 17,width: 17,),
+                        padding: const EdgeInsets.only(right: 8.0, left: 4),
+                        child: Image.asset(
+                          "assets/icon/social_setting.png",
+                          height: 17,
+                          width: 17,
+                        ),
                       ),
-
                       Text(
                         LangText(context: context)
                             .getLocal()!
