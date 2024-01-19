@@ -1,0 +1,7 @@
+#Thu Jan 18 17:35:14 WAT 2024
+base.0=C\:\\Users\\DELL\\Desktop\\ADN\\agrishop-mobile-app\\agrishop-seller\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.1=C\:\\Users\\DELL\\Desktop\\ADN\\agrishop-mobile-app\\agrishop-seller\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
