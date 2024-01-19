@@ -739,19 +739,14 @@ class _NewProductState extends State<NewProduct> {
     switch (index) {
       case 0:
         return buildGeneral();
-        break;
       case 1:
         return buildMedia();
-        break;
       case 2:
         return buildPriceNStock();
-        break;
       case 3:
         return buildSEO();
-        break;
       case 4:
         return buildShipping();
-        break;
       case 5:
         //return buildMarketing();
         break;
@@ -803,6 +798,7 @@ class _NewProductState extends State<NewProduct> {
               isMandatory: true),
           itemSpacer(),
           buildTagsEditTextField(
+              //to remove
               LangText(context: context).getLocal()!.tags_ucf,
               LangText(context: context)
                   .getLocal()!
@@ -811,6 +807,7 @@ class _NewProductState extends State<NewProduct> {
               isMandatory: true),
           itemSpacer(),
           buildEditTextField(
+              //to remove
               LangText(context: context).getLocal()!.barcode_ucf,
               LangText(context: context).getLocal()!.barcode_ucf,
               barcodeEditTextController,
@@ -853,6 +850,7 @@ class _NewProductState extends State<NewProduct> {
           ),
           itemSpacer(),
           buildGroupItems(
+            //to remove
             LangText(context: context).getLocal()!.vat_n_tax_ucf,
             Column(
               children: List.generate(vatTaxList.length, (index) {
@@ -906,6 +904,7 @@ class _NewProductState extends State<NewProduct> {
           }, thumbnailImage),
           itemSpacer(),
           buildGroupItems(
+              //to remove
               LangText(context: context).getLocal()!.product_videos_ucf,
               _buildDropDownField(
                   LangText(context: context).getLocal()!.video_provider_ucf,
@@ -923,6 +922,7 @@ class _NewProductState extends State<NewProduct> {
               LangText(context: context).getLocal()!.video_link_des),
           itemSpacer(),
           buildGroupItems(
+            //to remove
             LangText(context: context).getLocal()!.pdf_description_ucf,
             chooseSingleFileField(
                 LangText(context: context).getLocal()!.pdf_specification_ucf,
@@ -1016,6 +1016,7 @@ class _NewProductState extends State<NewProduct> {
             ),
           itemSpacer(),
           buildEditTextField(
+              //to remove
               LangText(context: context).getLocal()!.external_link_ucf,
               LangText(context: context).getLocal()!.external_link_ucf,
               externalLinkEditTextController),
