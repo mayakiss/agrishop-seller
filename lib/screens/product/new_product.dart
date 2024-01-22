@@ -1373,7 +1373,7 @@ class _NewProductState extends State<NewProduct> {
                               style: TextStyle(
                                   fontSize: 12, color: MyTheme.font_grey),
                               decoration:
-                                  InputDecoration.collapsed(hintText: "0"),
+                                  InputDecoration.collapsed(hintText: "1"),
                             ),
                           ),
                           Container(
