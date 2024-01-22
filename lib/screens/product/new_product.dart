@@ -772,12 +772,12 @@ class _NewProductState extends State<NewProduct> {
               LangText(context: context).getLocal()!.categories_ucf,
               isMandatory: true),
           itemSpacer(),
-          _buildDropDownField(LangText(context: context).getLocal()!.brands_ucf,
-              (value) {
-            selectedBrand = value;
-            setChange();
-          }, selectedBrand, brands),
-          itemSpacer(),
+          // _buildDropDownField(LangText(context: context).getLocal()!.brands_ucf,
+          //     (value) {
+          //   selectedBrand = value;
+          //   setChange();
+          // }, selectedBrand, brands),
+          // itemSpacer(),
           buildEditTextField(
               LangText(context: context).getLocal()!.unit_ucf,
               LangText(context: context).getLocal()!.unit_eg_ucf,
