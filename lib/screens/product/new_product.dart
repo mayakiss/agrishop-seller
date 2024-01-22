@@ -293,8 +293,8 @@ class _NewProductState extends State<NewProduct> {
       CustomRadioModel("Flat Rate", "flat_rate", false),
     ]);
     stockVisibilityStateList.addAll([
-      CustomRadioModel("Show Stock Quantity", "quantity", true),
-      CustomRadioModel("Show Stock With Text Only", "text", false),
+      CustomRadioModel("Show Stock Quantity", "quantity", false),
+      CustomRadioModel("Show Stock With Text Only", "text", true),
       CustomRadioModel("Hide Stock", "hide", false)
     ]);
 
