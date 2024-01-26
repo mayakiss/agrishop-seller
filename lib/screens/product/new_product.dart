@@ -293,8 +293,8 @@ class _NewProductState extends State<NewProduct> {
       CustomRadioModel("Flat Rate", "flat_rate", false),
     ]);
     stockVisibilityStateList.addAll([
-      CustomRadioModel("Show Stock Quantity", "quantity", true),
-      CustomRadioModel("Show Stock With Text Only", "text", false),
+      CustomRadioModel("Show Stock Quantity", "quantity", false),
+      CustomRadioModel("Show Stock With Text Only", "text", true),
       CustomRadioModel("Hide Stock", "hide", false)
     ]);
 
@@ -739,19 +739,14 @@ class _NewProductState extends State<NewProduct> {
     switch (index) {
       case 0:
         return buildGeneral();
-        break;
       case 1:
         return buildMedia();
-        break;
       case 2:
         return buildPriceNStock();
-        break;
       case 3:
         return buildSEO();
-        break;
       case 4:
         return buildShipping();
-        break;
       case 5:
         //return buildMarketing();
         break;
@@ -777,12 +772,12 @@ class _NewProductState extends State<NewProduct> {
               LangText(context: context).getLocal()!.categories_ucf,
               isMandatory: true),
           itemSpacer(),
-          _buildDropDownField(LangText(context: context).getLocal()!.brands_ucf,
-              (value) {
-            selectedBrand = value;
-            setChange();
-          }, selectedBrand, brands),
-          itemSpacer(),
+          // _buildDropDownField(LangText(context: context).getLocal()!.brands_ucf,
+          //     (value) {
+          //   selectedBrand = value;
+          //   setChange();
+          // }, selectedBrand, brands),
+          // itemSpacer(),
           buildEditTextField(
               LangText(context: context).getLocal()!.unit_ucf,
               LangText(context: context).getLocal()!.unit_eg_ucf,
@@ -801,20 +796,25 @@ class _NewProductState extends State<NewProduct> {
               "1",
               minimumEditTextController,
               isMandatory: true),
-          itemSpacer(),
-          buildTagsEditTextField(
-              LangText(context: context).getLocal()!.tags_ucf,
-              LangText(context: context)
-                  .getLocal()!
-                  .type_and_hit_enter_to_add_a_tag_ucf,
-              tagEditTextController,
-              isMandatory: true),
-          itemSpacer(),
-          buildEditTextField(
-              LangText(context: context).getLocal()!.barcode_ucf,
-              LangText(context: context).getLocal()!.barcode_ucf,
-              barcodeEditTextController,
-              isMandatory: false),
+          // itemSpacer(),
+          // buildTagsEditTextField(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.tags_ucf,
+          //   LangText(context: context)
+          //       .getLocal()!
+          //       .type_and_hit_enter_to_add_a_tag_ucf,
+          //   tagEditTextController,
+          //   isMandatory: true,
+          // ),
+
+          // itemSpacer(),
+          // buildEditTextField(
+          //     //to remove
+          //   LangText(context: context).getLocal()!.barcode_ucf,
+          //   LangText(context: context).getLocal()!.barcode_ucf,
+          //   barcodeEditTextController,
+          //   isMandatory: false,
+          // ),
           if (refund_addon.$)
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -852,18 +852,19 @@ class _NewProductState extends State<NewProduct> {
             },
           ),
           itemSpacer(),
-          buildGroupItems(
-            LangText(context: context).getLocal()!.vat_n_tax_ucf,
-            Column(
-              children: List.generate(vatTaxList.length, (index) {
-                return buildVatTax(vatTaxList[index].vatTaxModel.name,
-                    vatTaxList[index].amount, (onChangeDropDown) {
-                  vatTaxList[index].selectedItem = onChangeDropDown;
-                }, vatTaxList[index].selectedItem, vatTaxList[index].items);
-              }),
-            ),
-          ),
-          itemSpacer(),
+          // buildGroupItems(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.vat_n_tax_ucf,
+          //   Column(
+          //     children: List.generate(vatTaxList.length, (index) {
+          //       return buildVatTax(vatTaxList[index].vatTaxModel.name,
+          //           vatTaxList[index].amount, (onChangeDropDown) {
+          //         vatTaxList[index].selectedItem = onChangeDropDown;
+          //       }, vatTaxList[index].selectedItem, vatTaxList[index].items);
+          //     }),
+          //   ),
+          // ),
+          // itemSpacer(),
         ],
       ),
     );
@@ -905,15 +906,20 @@ class _NewProductState extends State<NewProduct> {
             setChange();
           }, thumbnailImage),
           itemSpacer(),
-          buildGroupItems(
-              LangText(context: context).getLocal()!.product_videos_ucf,
-              _buildDropDownField(
-                  LangText(context: context).getLocal()!.video_provider_ucf,
-                  (newValue) {
-                selectedVideoType = newValue;
-                setChange();
-              }, selectedVideoType, videoType)),
-          itemSpacer(),
+          // buildGroupItems(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.product_videos_ucf,
+          //   _buildDropDownField(
+          //     LangText(context: context).getLocal()!.video_provider_ucf,
+          //     (newValue) {
+          //       selectedVideoType = newValue;
+          //       setChange();
+          //     },
+          //     selectedVideoType,
+          //     videoType,
+          //   ),
+          // ),
+          // itemSpacer(),
           buildEditTextField(
               LangText(context: context).getLocal()!.video_link_ucf,
               LangText(context: context).getLocal()!.video_link_ucf,
@@ -922,16 +928,17 @@ class _NewProductState extends State<NewProduct> {
           smallTextForMessage(
               LangText(context: context).getLocal()!.video_link_des),
           itemSpacer(),
-          buildGroupItems(
-            LangText(context: context).getLocal()!.pdf_description_ucf,
-            chooseSingleFileField(
-                LangText(context: context).getLocal()!.pdf_specification_ucf,
-                "", (onChosenFile) {
-              pdfDes = onChosenFile;
-              setChange();
-            }, pdfDes),
-          ),
-          itemSpacer()
+          // buildGroupItems(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.pdf_description_ucf,
+          //   chooseSingleFileField(
+          //       LangText(context: context).getLocal()!.pdf_specification_ucf,
+          //       "", (onChosenFile) {
+          //     pdfDes = onChosenFile;
+          //     setChange();
+          //   }, pdfDes),
+          // ),
+          // itemSpacer()
         ],
       ),
     );
@@ -1015,10 +1022,12 @@ class _NewProductState extends State<NewProduct> {
               ],
             ),
           itemSpacer(),
-          buildEditTextField(
-              LangText(context: context).getLocal()!.external_link_ucf,
-              LangText(context: context).getLocal()!.external_link_ucf,
-              externalLinkEditTextController),
+          // buildEditTextField(
+          //   //to remove
+          //   LangText(context: context).getLocal()!.external_link_ucf,
+          //   LangText(context: context).getLocal()!.external_link_ucf,
+          //   externalLinkEditTextController,
+          // ),
           itemSpacer(height: 10),
           smallTextForMessage(LangText(context: context)
               .getLocal()!
@@ -1364,7 +1373,7 @@ class _NewProductState extends State<NewProduct> {
                               style: TextStyle(
                                   fontSize: 12, color: MyTheme.font_grey),
                               decoration:
-                                  InputDecoration.collapsed(hintText: "0"),
+                                  InputDecoration.collapsed(hintText: "1"),
                             ),
                           ),
                           Container(

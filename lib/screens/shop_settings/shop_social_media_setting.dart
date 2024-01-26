@@ -36,8 +36,8 @@ class _ShopSocialMedialSettingState extends State<ShopSocialMedialSetting> {
     facebookEditController.text = response.shopInfo!.facebook!;
     instagramEditController.text = response.shopInfo!.instagram;
     twitterEditController.text = response.shopInfo!.twitter!;
-    googleEditController.text = response.shopInfo!.google!;
-    youtubeEditController.text = response.shopInfo!.youtube!;
+    // googleEditController.text = response.shopInfo!.google!;
+    // youtubeEditController.text = response.shopInfo!.youtube!;
 
     setState(() {});
     return true;
@@ -108,14 +108,14 @@ class _ShopSocialMedialSettingState extends State<ShopSocialMedialSetting> {
                 SizedBox(
                   height: 14,
                 ),
-                buildGoogle(context),
-                SizedBox(
-                  height: 14,
-                ),
-                buildYoutube(context),
-                SizedBox(
-                  height: 30,
-                ),
+                // buildGoogle(context),
+                // SizedBox(
+                //   height: 14,
+                // ),
+                // buildYoutube(context),
+                // SizedBox(
+                //   height: 30,
+                // ),
                 Buttons(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(6)),

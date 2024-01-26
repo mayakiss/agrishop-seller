@@ -183,10 +183,10 @@ class _ShopGeneralSettingState extends State<ShopGeneralSetting> {
                 SizedBox(
                   height: 14,
                 ),
-                buildShopTitle(context),
-                SizedBox(
-                  height: 14,
-                ),
+                // buildShopTitle(context),
+                // SizedBox(
+                //   height: 14,
+                // ),
                 buildShopDes(context),
                 SizedBox(
                   height: 14,
